@@ -38,7 +38,7 @@
       <Position>5</Position>
       <DataType>varchar|0s</DataType>
     </column>
-    <column id="14" parent="6" name="sorce">
+    <column id="14" parent="6" name="score">
       <Position>6</Position>
       <DataType>numeric|0s</DataType>
     </column>
