@@ -13,7 +13,7 @@ import numpy as np
 import sqlite3
 import jieba
 
-con = sqlite3.connect('movie.db')
+con = sqlite3.connect('../movie.db')
 cur = con.cursor()
 
 sql = "select instroduction from movie250"
@@ -26,7 +26,7 @@ con.close()
 
 cut = jieba.cut(text)
 string = ' '.join(cut)
-img = Image.open(r'.\static\assets\img\tree.jpg')
+img = Image.open(r'../static/assets/img/tree.jpg')
 img_array = np.array(img)
 wc = WordCloud(
     background_color='white',
